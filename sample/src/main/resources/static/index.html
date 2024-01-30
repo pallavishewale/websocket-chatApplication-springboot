@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/webjars/sockjs-client/1.1.2/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/2.3.3/stomp.min.js"></script>
+    <link href="style.css" rel="stylesheet"></link>
+    <script src="script.js"></script>
+
+</head>
+<body>
+<div id="login-container" class="container">
+    <h1>Login</h1>
+    <div class="form">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" autofocus required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+        </div>
+        <button type="submit" class="login-button" id="login">Login</button>
+    </div>
+</div>
+
+<div id="chat-page-setup" class="chat-page" >
+    <div class="login-users-container1" id="login-user-container">
+        <h2>Online Users</h2>
+        <ul id="itemList">
+        </ul>
+    </div>
+ <div>
+  <div id="chat-room" class="chat-container">
+    <h1> My chat log</h1>
+    <div class="chat-log" id="table-container">
+        <table id="chat-message" class="chat-message">
+        </table>
+    </div>
+
+      <div class="message-container">
+          <input type="text" id="reciver-name" placeholder="Enter Reciver name" value="sharing-katta"
+                 style="font-weight:600; display:none;">
+          <input type="text" id="message" placeholder="Enter your message" style="font-size:18px;">
+          <button class="send-button" id="send-msg">Send</button>
+          <button class="logout-button" id="logout">Logout</button>
+      </div>
+      <div class="msg-buttons">
+          <button id="public-send"> send to: Sharing katta</button>
+          <button id="private-send"> send privatly</button>
+      </div>
+  </div>
+
+  </div>
+</div>
+</body>
+</html>
